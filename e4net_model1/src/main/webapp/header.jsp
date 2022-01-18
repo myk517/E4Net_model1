@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html;"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%
-request.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("UTF-8");
 %>
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,7 @@ request.setCharacterEncoding("utf-8");
 				<li><a href="#tabs-2">머니결제</a></li>
 				<li><a href="#tabs-3">거래내역</a></li>
 				<li><a href="#tabs-4">로그아웃</a></li>
-			</ul>
+			</ul>이글자는지워주세요
 		</nav>
 </body>
 </html>
