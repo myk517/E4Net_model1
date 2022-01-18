@@ -22,7 +22,7 @@ request.setCharacterEncoding("utf-8");
 				<li><a href="#tabs-2">머니결제</a></li>
 				<li><a href="#tabs-3">거래내역</a></li>
 				<li><a href="#tabs-4">로그아웃</a></li>
-			</ul>이글자는지워주세요
+			</ul>이글자도 지워주세요 올라가라잉 제발
 		</nav>
 </body>
 </html>
