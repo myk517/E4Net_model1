@@ -47,7 +47,7 @@ try {
 		System.out.println("-----------------------");
 		//out.print("환영합니다."); //결과를 웨브라우저 화면에 띄우기  rs.getString("컬럼명");
 		//redirect? 
-
+		session.setAttribute("memb_id", rs.getString("memb_id")); //세션생성
 		request.setAttribute("IP", request.getRemoteAddr()); //IP획득
 
 		//---로그인 이력 추가를 위한 쿼리문 -------
