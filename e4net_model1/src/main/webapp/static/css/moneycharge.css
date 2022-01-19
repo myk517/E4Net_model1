@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+body div .money_main{
+ 	width: 30%;
+ 	height: 30%;
+	
+}
+
+body div .money_balance{
+	width: 30%;
+ 	height: 30%;
+}
+
+body div .money_charge{
+	width: 30%;
+ 	height: 30%;
+}
+
+body div .money_result{
+	width: 30%;
+ 	height: 30%;
+}
+
+

@@ -1,18 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+request.setCharacterEncoding("UTF-8");
+%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>MemberJoin</title>
 <link href="static/css/header.css" rel="stylesheet" />
 </head>
 
 <body>
- <!DOCTYPE html>
-<html>
-    
-      <section class="page-section text-white" style="margin-top:30%;">
+
+<form action="jsp/member_join.jsp">
+      <section class="page-section text-white" style="margin-top: 10%;">
             <div class="container px-4 px-lg-5 text-center" style="margin-left:5%; width:90%; height: 10%; border: solid;">
              <div style=" margin:0 auto;">
                 <h2 style="text-align: center;" class="mb-4">MEMBER JOIN</h2>
@@ -22,7 +26,7 @@
         		<th style="width: 40%">ID</th>
         		<td>
         		<div class="input-group mb-3">
-      				<input style="width: 25%;" type="text" class="form-control" id="id" name="id" placeholder="ID" required>
+      				<input style="width: 25%;" type="text" class="form-control" id="id" name="memb_id" placeholder="ID" required>
       				<button class="btn btn-primary" type="button" id="btn">중복확인</button>
     			</div>
     			<div style="display: none;" id="target"></div>
@@ -32,7 +36,7 @@
         		<th>PASSWORD</th>
         		<td>
         		    <div class="form-group">
-      				<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" required>
+      				<input type="password" class="form-control" id="pwd" name="memb_pw" placeholder="Password" required>
     				</div>
         		</td>
         	</tr><Br>
@@ -40,7 +44,7 @@
         		<th>PWDCheck</th>
         		<td>
         		    <div class="form-group">
-      				<input style="width: 28%" type="password" class="form-control" id="pwd" name="pwd" placeholder="PWD Chk" required>
+      				<input style="width: 28%" type="password" class="form-control" id="pwd" name="memb_pwcheck" placeholder="PWD Chk" required>
       				<button class="btn btn-primary" type="button" id="btn1">Check</button>
     				</div>
         		</td>
@@ -49,7 +53,7 @@
         		<th>Name</th>
         		<td>
         		    <div class="form-group">
-      				<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Name" required>
+      				<input type="text" class="form-control" id="name" name="memb_nm" placeholder="Name" required>
     				</div>
         		</td>
         	</tr>
@@ -57,7 +61,7 @@
         		<th>Phone</th>
         	    <td>
         	    	<div class="input-group mb-3">
-					  <input type="tel" class="form-control" placeholder="ex)010-1234-1234" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+					  <input type="tel" class="form-control" placeholder="ex)010-1234-1234" id="phone" name="mobile_no" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
 					  
 					</div>
 					<div style="display: none;" id="target1"></div>
@@ -67,7 +71,7 @@
         		<th>E-Mail</th>
         	    <td>
         	    	<div class="input-group mb-3">
-					  <input type="tel" class="form-control" placeholder="ex)www@www.com" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+					  <input type="tel" class="form-control" placeholder="ex)www@www.com" id="emaill" name="email_addr" required>
 					  
 					</div>
 					<div style="display: none;" id="target1"></div>
@@ -77,7 +81,7 @@
         		<th style="width: 20%">Address</th>
         		<td>
         		<div class="input-group mb-3">
-      				<input type="text" class="form-control" id="name" name="name" placeholder="ex)서울시 강남구 테헤란로" required>
+      				<input type="text" class="form-control" id="address" name="zip_addr" placeholder="ex)서울시 강남구 테헤란로" required>
     			</div>
     			</td>
         	</tr><Br>
@@ -90,7 +94,7 @@
             </div>
             </div>
         </section>
-        
+      </form>  
 </body>
     <script>
    

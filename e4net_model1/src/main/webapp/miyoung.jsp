@@ -8,7 +8,6 @@
 </head>
 <body>
 <%@ include file="header.jsp"%>
-<jsp:include page/> 
 Miyoung.jsp입니다.
 
 
