@@ -6,17 +6,15 @@ request.setCharacterEncoding("UTF-8");
 <!DOCTYPE html>
 <html>
 <head>
-<link href="<%=request.getContextPath() %>/static/css/header.css" rel="stylesheet" />
-<meta charset="UTF-8">
+<link href="static/css/header.css" rel="stylesheet" />
+<meta charset="utf-8">
 <title>Insert title here</title>
 
 </head>
 <body>
-
 		<nav>
-		
 			<h1>
-				<img src="<%=request.getContextPath() %>/static/img/e4netMain.png">
+				<img src="static/img/e4netMain.png">
 			</h1>
 
 			<ul class="header">
@@ -24,7 +22,7 @@ request.setCharacterEncoding("UTF-8");
 				<li><a href="#tabs-2">머니결제</a></li>
 				<li><a href="#tabs-3">거래내역</a></li>
 				<li><a href="#tabs-4">로그아웃</a></li>
-			</ul>
+			</ul>이글자는지워주세요
 		</nav>
 </body>
 </html>
